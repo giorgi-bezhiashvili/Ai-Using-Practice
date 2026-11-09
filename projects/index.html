@@ -479,6 +479,15 @@
             </div>
         </section>
 
+        <!-- Wise Words / API Section -->
+        <section class="mt-14 space-y-4">
+            <div class="flex items-center gap-2 text-accent-cyan font-mono text-xs uppercase tracking-wider">
+                <span class="w-2 h-2 rounded-full bg-accent-cyan animate-pulse"></span>
+                <span>Wise Words &middot; API Feed</span>
+            </div>
+            <div class="wiseWords grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-6 sm:p-8 rounded-3xl glass-panel border border-white/[0.08] shadow-2xl"></div>
+        </section>
+
     </main>
 
     <!-- Footer -->
@@ -578,6 +587,34 @@
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
         }
+
+        // Fetch Wise Words (JSONPlaceholder PATCH post 1)
+        fetch("https://jsonplaceholder.typicode.com/posts/1", {
+            method: "PATCH",
+            body: JSON.stringify({
+                title: "foo",
+            }),
+            headers: {
+                "Content-type": "application/json; charset=UTF-8",
+            },
+        })
+            .then((response) => response.json())
+            .then((json) => {
+                const p = document.querySelector(".wiseWords");
+                if (!p) return;
+                p.className = "wiseWords grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-6 sm:p-8 rounded-3xl glass-panel border border-white/[0.08] shadow-2xl";
+                p.innerHTML = "";
+
+                Object.entries(json).forEach(([key, value]) => {
+                    p.innerHTML += `
+                        <p class="p-5 rounded-2xl bg-surface-card border border-white/[0.08] hover:border-brand-500/40 hover:bg-surface-cardHover transition-all shadow-md text-slate-200 text-sm leading-relaxed flex flex-col justify-between group">
+                            <span class="text-xs font-mono font-semibold uppercase tracking-wider text-brand-400 group-hover:text-accent-cyan transition-colors mb-2">${key}</span>
+                            <span class="text-white font-medium break-words">${value}</span>
+                        </p>
+                    `;
+                });
+            })
+            .catch((err) => console.error("Error loading wise words:", err));
     </script>
 </body>
 </html>
