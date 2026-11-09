@@ -167,7 +167,7 @@
             <!-- Desktop Navigation Links -->
             <nav class="hidden md:flex items-center gap-1 bg-surface-subtle/80 p-1.5 rounded-full border border-white/[0.06] backdrop-blur-md">
                 <a href="#main" id="nav-link-main" class="nav-item px-4 py-2 rounded-full text-xs uppercase tracking-wider font-semibold text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all">მთავარი</a>
-                <a href="#projects" id="nav-link-projects" class="nav-item px-4 py-2 rounded-full text-xs uppercase tracking-wider font-semibold text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all">პროექტები</a>
+                <a href="projects/index.html" id="nav-link-projects" class="nav-item px-4 py-2 rounded-full text-xs uppercase tracking-wider font-semibold text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all">პროექტები</a>
                 <a href="#frontend-knowledge" id="nav-link-frontend" class="nav-item px-4 py-2 rounded-full text-xs uppercase tracking-wider font-semibold text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all">Front-End</a>
                 <a href="#backend-knowledge" id="nav-link-backend" class="nav-item px-4 py-2 rounded-full text-xs uppercase tracking-wider font-semibold text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all">Backend</a>
                 <a href="#about" id="nav-link-about" class="nav-item px-4 py-2 rounded-full text-xs uppercase tracking-wider font-semibold text-slate-300 hover:text-white hover:bg-white/[0.06] transition-all">ჩემ შესახებ</a>
@@ -201,7 +201,7 @@
         <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="hidden md:hidden border-b border-white/[0.08] bg-[#070a13]/95 backdrop-blur-2xl px-6 py-6 space-y-3">
             <a href="#main" class="mobile-nav-link block py-2 text-slate-300 hover:text-white font-medium border-b border-white/[0.04]">1. მთავარი (Main)</a>
-            <a href="#projects" class="mobile-nav-link block py-2 text-slate-300 hover:text-white font-medium border-b border-white/[0.04]">🚀 გამორჩეული პროექტები</a>
+            <a href="projects/index.html" class="mobile-nav-link block py-2 text-slate-300 hover:text-white font-medium border-b border-white/[0.04]">🚀 გამორჩეული პროექტები</a>
             <a href="#frontend-knowledge" class="mobile-nav-link block py-2 text-slate-300 hover:text-white font-medium border-b border-white/[0.04]">2. Front-End ცოდნა</a>
             <a href="#backend-knowledge" class="mobile-nav-link block py-2 text-slate-300 hover:text-white font-medium border-b border-white/[0.04]">3. Backend ცოდნა</a>
             <a href="#about" class="mobile-nav-link block py-2 text-slate-300 hover:text-white font-medium border-b border-white/[0.04]">🌟 ჩემ შესახებ</a>
@@ -273,7 +273,7 @@
 
                     <!-- Call To Actions -->
                     <div class="pt-4 flex flex-wrap items-center gap-4">
-                        <a href="#projects" id="hero-btn-projects" class="px-6 py-3 rounded-xl font-semibold text-sm bg-gradient-to-r from-brand-600 via-indigo-600 to-brand-500 hover:from-brand-500 hover:to-indigo-500 text-white shadow-xl shadow-brand-600/30 transition-all flex items-center gap-2 group">
+                        <a href="projects/index.html" id="hero-btn-projects" class="px-6 py-3 rounded-xl font-semibold text-sm bg-gradient-to-r from-brand-600 via-indigo-600 to-brand-500 hover:from-brand-500 hover:to-indigo-500 text-white shadow-xl shadow-brand-600/30 transition-all flex items-center gap-2 group">
                             <span>🚀 პროექტების ნახვა</span>
                             <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
@@ -372,267 +372,31 @@
         </section>
 
         <!-- ============================================== -->
-        <!-- FEATURED PROJECTS (გამორჩეული პროექტები)        -->
+        <!-- FEATURED PROJECTS CALL-OUT (გამორჩეული პროექტები) -->
         <!-- ============================================== -->
-        <section id="projects" class="scroll-mt-28 space-y-8">
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-white/[0.08] pb-6">
-                <div>
-                    <div class="flex items-center gap-2 text-brand-400 font-mono text-xs uppercase tracking-wider mb-2">
+        <section id="projects" class="scroll-mt-28">
+            <div class="relative glass-panel rounded-3xl p-8 sm:p-12 text-center overflow-hidden group border border-white/[0.08] hover:border-brand-500/40 transition-all">
+                <div class="absolute inset-0 bg-gradient-to-r from-brand-600/10 via-indigo-600/10 to-accent-cyan/10 pointer-events-none"></div>
+                <div class="relative z-10 max-w-2xl mx-auto space-y-5">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-300 font-mono text-xs uppercase tracking-wider">
                         <span class="w-2 h-2 rounded-full bg-brand-400"></span>
-                        <span>Showcase</span>
+                        <span>Showcase &middot; პორტფოლიო</span>
                     </div>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight flex items-center gap-3">
-                        <span>🚀 გამორჩეული პროექტები</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                        🚀 ჩემი გამორჩეული პროექტები
                     </h2>
-                    <p class="text-slate-400 text-sm mt-1 max-w-xl">
-                        სერვერული არქიტექტურა, მონაცემთა ნაკადები, უსაფრთხოება და რეალურ დროში მომუშავე სისტემები.
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                        სერვერული არქიტექტურა, მონაცემთა ნაკადები, უსაფრთხოება და რეალურ დროში მომუშავე სისტემები. პროექტების დეტალური კატალოგის სანახავად გადადით მეორე გვერდზე:
                     </p>
+                    <div class="pt-2 flex flex-wrap justify-center gap-4">
+                        <a href="projects/index.html" class="inline-flex items-center gap-3 px-8 py-4 rounded-xl font-semibold text-sm bg-gradient-to-r from-brand-600 via-indigo-600 to-brand-500 hover:from-brand-500 hover:to-indigo-500 text-white shadow-xl shadow-brand-600/30 transition-all transform hover:scale-105 active:scale-95 group">
+                            <span>👉 ყველა პროექტის ნახვა (გვერდი 2)</span>
+                            <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-
-                <!-- Project Category Filters -->
-                <div class="flex items-center gap-1.5 p-1 bg-surface-card rounded-xl border border-white/[0.08] text-xs font-mono">
-                    <button id="filter-all" class="filter-btn active px-3.5 py-1.5 rounded-lg bg-brand-600 text-white font-semibold transition-all">ყველა</button>
-                    <button id="filter-backend" class="filter-btn px-3.5 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.05] transition-all">Backend &amp; API</button>
-                    <button id="filter-fullstack" class="filter-btn px-3.5 py-1.5 rounded-lg text-slate-300 hover:text-white hover:bg-white/[0.05] transition-all">Full-Stack</button>
-                </div>
-            </div>
-
-            <!-- Projects Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="projects-container">
-
-                <!-- Project 1: Social-Ts -->
-                <article data-category="backend" class="project-card glass-panel glass-panel-hover rounded-3xl p-7 flex flex-col justify-between relative group">
-                    <div class="space-y-4">
-                        <div class="flex items-start justify-between gap-3">
-                            <div class="p-3 rounded-2xl bg-brand-600/10 border border-brand-500/20 text-brand-400">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
-                                </svg>
-                            </div>
-                            <span class="px-3 py-1 rounded-full text-xs font-mono font-medium bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-                                Realtime API
-                            </span>
-                        </div>
-
-                        <div>
-                            <h3 class="text-2xl font-bold text-white group-hover:text-brand-300 transition-colors">
-                                Social-Ts
-                            </h3>
-                            <p class="text-xs font-mono text-slate-400 mt-1">სოციალური ქსელის REST API</p>
-                        </div>
-
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            სოციალური პლატფორმის მძლავრი ბექენდი JWT refresh rotation მექანიზმით, Google OAuth ავტორიზაციით და რეალურ დროში მყისიერი შეტყობინებების სისტემით Socket.io-ზე.
-                        </p>
-
-                        <!-- Key Feature Highlights -->
-                        <ul class="space-y-2 text-xs text-slate-300 pt-2">
-                            <li class="flex items-center gap-2">
-                                <span class="text-brand-400">⚡</span>
-                                <span><strong>JWT Refresh Rotation:</strong> უსაფრთხო ტოკენების როტაცია და შენახვა</span>
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-brand-400">⚡</span>
-                                <span><strong>Google OAuth:</strong> გამართული სოციალური აუტენტიფიკაცია</span>
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-brand-400">⚡</span>
-                                <span><strong>Socket.io:</strong> რეალურ დროში შეტყობინებები და ივენთები</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="pt-6 mt-6 border-t border-white/[0.08] space-y-4">
-                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono">
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-slate-300 border border-white/[0.06]">Node.js</span>
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-brand-300 border border-white/[0.06]">TypeScript</span>
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-emerald-300 border border-white/[0.06]">MongoDB</span>
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-purple-300 border border-white/[0.06]">Socket.io</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="https://github.com/giorgi-bezhiashvili" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 px-4 rounded-xl text-xs font-semibold font-mono bg-white/[0.06] hover:bg-brand-600 text-white transition-all text-center flex items-center justify-center gap-2 border border-white/[0.08] hover:border-transparent">
-                                <span>View on GitHub</span>
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 2: Full E-Commerce Backend -->
-                <article data-category="backend" class="project-card glass-panel glass-panel-hover rounded-3xl p-7 flex flex-col justify-between relative group">
-                    <div class="space-y-4">
-                        <div class="flex items-start justify-between gap-3">
-                            <div class="p-3 rounded-2xl bg-accent-cyan/10 border border-accent-cyan/20 text-accent-cyan">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
-                                </svg>
-                            </div>
-                            <span class="px-3 py-1 rounded-full text-xs font-mono font-medium bg-accent-cyan/10 text-accent-cyan border border-accent-cyan/20">
-                                Multi-Vendor &amp; FinTech
-                            </span>
-                        </div>
-
-                        <div>
-                            <h3 class="text-2xl font-bold text-white group-hover:text-accent-cyan transition-colors">
-                                Full E-Commerce Backend
-                            </h3>
-                            <p class="text-xs font-mono text-slate-400 mt-1">მრავალგამყიდველიანი ელ-კომერციის API</p>
-                        </div>
-
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            კომპლექსური ონლაინ-მაღაზიის Backend გადაწყვეტა Stripe Connect-ის ავტომატიზებული გადახდებითა და ClamAV ანტივირუსული სკანირებით ატვირთული ფაილებისთვის.
-                        </p>
-
-                        <!-- Key Feature Highlights -->
-                        <ul class="space-y-2 text-xs text-slate-300 pt-2">
-                            <li class="flex items-center gap-2">
-                                <span class="text-accent-cyan">🛡️</span>
-                                <span><strong>Stripe Connect:</strong> მრავალმხრივი გადახდები და ავტომატური split-transfers</span>
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-accent-cyan">🛡️</span>
-                                <span><strong>ClamAV Virus Scanner:</strong> ფაილების უსაფრთხო სკანირება ატვირთვამდე</span>
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-accent-cyan">🛡️</span>
-                                <span><strong>RBAC Architecture:</strong> როლებისა და უფლებების იერარქიული კონტროლი</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="pt-6 mt-6 border-t border-white/[0.08] space-y-4">
-                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono">
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-slate-300 border border-white/[0.06]">Node.js</span>
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-brand-300 border border-white/[0.06]">TypeScript</span>
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-emerald-300 border border-white/[0.06]">MongoDB</span>
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-accent-cyan border border-white/[0.06]">Stripe</span>
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-rose-300 border border-white/[0.06]">ClamAV</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="https://github.com/giorgi-bezhiashvili" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 px-4 rounded-xl text-xs font-semibold font-mono bg-white/[0.06] hover:bg-brand-600 text-white transition-all text-center flex items-center justify-center gap-2 border border-white/[0.08] hover:border-transparent">
-                                <span>View on GitHub</span>
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 3: Newton -->
-                <article data-category="fullstack" class="project-card glass-panel glass-panel-hover rounded-3xl p-7 flex flex-col justify-between relative group">
-                    <div class="space-y-4">
-                        <div class="flex items-start justify-between gap-3">
-                            <div class="p-3 rounded-2xl bg-accent-purple/10 border border-accent-purple/20 text-accent-purple">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
-                                </svg>
-                            </div>
-                            <span class="px-3 py-1 rounded-full text-xs font-mono font-medium bg-accent-purple/10 text-accent-purple border border-accent-purple/20">
-                                Full-Stack Platform
-                            </span>
-                        </div>
-
-                        <div>
-                            <h3 class="text-2xl font-bold text-white group-hover:text-accent-purple transition-colors">
-                                Newton
-                            </h3>
-                            <p class="text-xs font-mono text-slate-400 mt-1">სრული სტეკის ფიზიკის შესასწავლი პლატფორმა</p>
-                        </div>
-
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            სრულსტეკიანი საგანმანათლებლო პლატფორმა Next.js ფრონტენდით, ინტერაქტიული სასწავლო მოდულებით და TypeScript/MongoDB სერვერული ინტეგრაციით.
-                        </p>
-
-                        <!-- Key Feature Highlights -->
-                        <ul class="space-y-2 text-xs text-slate-300 pt-2">
-                            <li class="flex items-center gap-2">
-                                <span class="text-accent-purple">⚛️</span>
-                                <span><strong>Next.js Frontend:</strong> რეაქტიული, მაღალი წარმადობის ინტერფეისი</span>
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-accent-purple">⚛️</span>
-                                <span><strong>Full Integration:</strong> RESTful მონაცემთა ნაკადები და მოდულები</span>
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-accent-purple">⚛️</span>
-                                <span><strong>Optimized Storage:</strong> სწრაფი მონაცემთა ბაზა და ქეშირება</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="pt-6 mt-6 border-t border-white/[0.08] space-y-4">
-                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono">
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-slate-300 border border-white/[0.06]">Node.js</span>
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-brand-300 border border-white/[0.06]">TypeScript</span>
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-cyan-300 border border-white/[0.06]">Next.js</span>
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-emerald-300 border border-white/[0.06]">MongoDB</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="https://github.com/giorgi-bezhiashvili" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 px-4 rounded-xl text-xs font-semibold font-mono bg-white/[0.06] hover:bg-brand-600 text-white transition-all text-center flex items-center justify-center gap-2 border border-white/[0.08] hover:border-transparent">
-                                <span>View on GitHub</span>
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
-                <!-- Project 4: Auth Boilerplate -->
-                <article data-category="backend" class="project-card glass-panel glass-panel-hover rounded-3xl p-7 flex flex-col justify-between relative group">
-                    <div class="space-y-4">
-                        <div class="flex items-start justify-between gap-3">
-                            <div class="p-3 rounded-2xl bg-amber-500/10 border border-amber-500/20 text-amber-400">
-                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
-                                </svg>
-                            </div>
-                            <span class="px-3 py-1 rounded-full text-xs font-mono font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20">
-                                Production Security
-                            </span>
-                        </div>
-
-                        <div>
-                            <h3 class="text-2xl font-bold text-white group-hover:text-amber-300 transition-colors">
-                                Auth Boilerplate
-                            </h3>
-                            <p class="text-xs font-mono text-slate-400 mt-1">სამუშაოდ მზა ავტორიზაციის სტარტერი</p>
-                        </div>
-
-                        <p class="text-slate-300 text-sm leading-relaxed">
-                            საწარმოო დონის (production-ready) ავტორიზაციის მოდული JWT rotation-ით, Google OAuth-ითა და timing attack-ებისგან დაცული timing-safe token შედარებით.
-                        </p>
-
-                        <!-- Key Feature Highlights -->
-                        <ul class="space-y-2 text-xs text-slate-300 pt-2">
-                            <li class="flex items-center gap-2">
-                                <span class="text-amber-400">🔒</span>
-                                <span><strong>Timing-Safe Token Comparison:</strong> გვერდითი შეტევების პრევენცია</span>
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-amber-400">🔒</span>
-                                <span><strong>Passport.js Integration:</strong> სტრატეგიების მოქნილი მენეჯმენტი</span>
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <span class="text-amber-400">🔒</span>
-                                <span><strong>Enterprise Security:</strong> უსაფრთხო ჰეშირება და სესიები</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="pt-6 mt-6 border-t border-white/[0.08] space-y-4">
-                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono">
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-slate-300 border border-white/[0.06]">Node.js</span>
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-brand-300 border border-white/[0.06]">TypeScript</span>
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-amber-300 border border-white/[0.06]">Passport</span>
-                            <span class="px-2.5 py-1 rounded-md bg-white/[0.05] text-emerald-300 border border-white/[0.06]">JWT</span>
-                        </div>
-                        <div class="flex items-center gap-3">
-                            <a href="https://github.com/giorgi-bezhiashvili" target="_blank" rel="noopener noreferrer" class="flex-1 py-2.5 px-4 rounded-xl text-xs font-semibold font-mono bg-white/[0.06] hover:bg-brand-600 text-white transition-all text-center flex items-center justify-center gap-2 border border-white/[0.08] hover:border-transparent">
-                                <span>View on GitHub</span>
-                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
-                            </a>
-                        </div>
-                    </div>
-                </article>
-
             </div>
         </section>
 
@@ -1013,6 +777,7 @@
                             </button>
                         </div>
                     </address>
+                    
                 </div>
 
                 <!-- Interactive Quick Message Form -->
@@ -1051,6 +816,13 @@
                 </div>
 
             </div>
+            <!-- ============================================== -->
+        <!-- 4. თანამშრომლები -->
+        <!-- ============================================== -->
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    🌟თანამშრომლები
+                </h2> 
+        <div class="coworkers"></div>
         </section>
 
     </main>
@@ -1070,7 +842,7 @@
 
             <div class="flex items-center gap-6 text-xs text-slate-400 font-mono">
                 <a href="#main" class="hover:text-white transition-colors">მთავარი</a>
-                <a href="#projects" class="hover:text-white transition-colors">პროექტები</a>
+                <a href="projects/index.html" class="hover:text-white transition-colors">პროექტები</a>
                 <a href="#frontend-knowledge" class="hover:text-white transition-colors">Front-End</a>
                 <a href="#backend-knowledge" class="hover:text-white transition-colors">Backend</a>
                 <a href="https://github.com/giorgi-bezhiashvili" target="_blank" rel="noopener noreferrer" class="hover:text-brand-300 transition-colors">GitHub</a>
@@ -1153,33 +925,29 @@
             });
         }
 
-        // Project Filtering (All, Backend, Fullstack)
-        const filterBtns = document.querySelectorAll('.filter-btn');
-        const projectCards = document.querySelectorAll('.project-card');
+        // JSONPlaceholder API — თანამშრომლების ჩატვირთვა
+        fetch("https://jsonplaceholder.typicode.com/users")
+            .then(response => response.json())
+            .then(users => {
+                const coworkers = document.querySelector(".coworkers");
+                if (!coworkers) return;
 
-        filterBtns.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterBtns.forEach(b => {
-                    b.classList.remove('active', 'bg-brand-600', 'text-white');
-                    b.classList.add('text-slate-300');
-                });
-                btn.classList.add('active', 'bg-brand-600', 'text-white');
-                btn.classList.remove('text-slate-300');
-
-                let target = 'all';
-                if (btn.id === 'filter-backend') target = 'backend';
-                if (btn.id === 'filter-fullstack') target = 'fullstack';
-
-                projectCards.forEach(card => {
-                    const cat = card.getAttribute('data-category');
-                    if (target === 'all' || cat === target) {
-                        card.style.display = 'flex';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-            });
-        });
+                coworkers.className = "coworkers grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6";
+                coworkers.innerHTML = users.map(user => `
+                    <div class="p-4 rounded-xl bg-surface-card border border-white/[0.08] flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-600/20 text-brand-300 flex items-center justify-center font-bold">
+                            ${user.name.charAt(0)}
+                        </div>
+                        <div class="min-w-0">
+                            <p class="text-white text-sm font-semibold truncate">${user.name}</p>
+                            <a href="mailto:${user.email}" class="text-xs text-slate-400 hover:text-brand-300 truncate block">
+                                ${user.email}
+                            </a>
+                        </div>
+                    </div>
+                `).join("");
+            })
+            .catch(err => console.error("Error loading coworkers:", err));
 
         // Contact Form Submission (Interactive Feedback)
         const contactForm = document.getElementById('contact-form');
